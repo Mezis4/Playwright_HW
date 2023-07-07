@@ -24,5 +24,5 @@ test("Invalid user should not log in", async ({ page }) => {
   await expect(page).toHaveURL("https://netology.ru/?modal=sign_in");
   await expect(page.locator('[data-testid="login-error-hint"]')).
     toHaveText("Вы ввели неправильно логин или пароль", {timeout : 30000});
-    await page.screenshot({ path: 'screenshot/screenshot2.png' });
+  await page.screenshot({ path: 'screenshot/screenshot2.png' });
 });
